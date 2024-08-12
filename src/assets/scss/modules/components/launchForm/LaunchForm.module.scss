@@ -1,0 +1,42 @@
+@import '../../../variables';
+
+.formRelease{
+    border: 1px solid $gray-color;
+    border-radius: 10px;
+    padding: 24px 36px;
+    box-shadow: 0 5px 15px $gray-color-strong;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .formRelease___formTitle{
+        text-align: center;
+    }
+
+    .formRelease___inputArea{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 24px 0;
+
+        .formRelease___inputArea___inputBox{
+            width: calc(33% - 20px);
+            text-align: center;
+
+            input, select{
+                margin-top: 8px;
+            }
+
+            input[type="checkbox"]{
+                height: 28px;
+            }
+        }
+    }
+
+    .formRelease__submitArea{
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+    }
+}

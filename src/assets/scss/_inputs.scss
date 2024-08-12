@@ -1,0 +1,16 @@
+
+// Default Input
+
+input:not(input[type="submit"]),
+select{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid $gray-color-strong;
+    background-color: $gray-color;
+    color: $dark-color;
+}
+
+// Custom Input {Radio/CheckBox}
+
+// Custom Select

@@ -1,0 +1,31 @@
+@import '../../../../variables';
+
+.releaseList___Table___Data{
+    cursor: pointer;
+
+    &:hover{
+        background-color: $gray-color-strong;
+        
+        td{
+            font-weight: 600;
+        }
+    }
+
+    &.isPaidItem{
+        background-color: $sucess-color;
+    }
+
+    td{
+        padding: 12px 8px;
+
+        &.releaseList___Table___Data__CtaItens{
+            display: flex;
+            justify-content: space-evenly;
+
+            svg:hover{
+                transform: scale(1.1);
+                color: $primary-color;
+            }
+        }
+    }   
+}
