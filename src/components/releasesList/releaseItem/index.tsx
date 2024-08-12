@@ -18,9 +18,20 @@ export function ReleaseItem({release, releases, setReleases}: Props){
         setReleases(filterList)
     }
 
-    function isPaid(){
-
-    }
+    function isPaid(item: IRelease) {
+        const updatedReleases = releases.map((rel) => {
+          if (rel.id === item.id) {
+            return {
+              ...rel,
+              isPaid: !rel.isPaid,
+            };
+          } else {
+            return rel;
+          }
+        });
+      
+        setReleases(updatedReleases);
+      }
 
     return(
         <tr className={`${styles.releaseList___Table___Data} ${release.isPaid ? styles.isPaidItem : "" }`}>
@@ -37,6 +48,7 @@ export function ReleaseItem({release, releases, setReleases}: Props){
                     onClick={()=>removeExpense(release)}
                 /> 
                 <FaCheck
+                    onClick={()=>isPaid(release)}
                 />
             </td>
         </tr>
