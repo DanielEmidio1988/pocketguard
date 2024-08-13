@@ -35,10 +35,10 @@ export function ReleaseItem({release, releases, setReleases}: Props){
 
     return(
         <tr className={`${styles.releaseList___Table___Data} ${release.isPaid ? styles.isPaidItem : "" }`}>
-            <td>{release.name}</td>
-            <td>{release.type}</td>
-            <td>{release.value.toLocaleString("pt-br", {style: "currency", currency: "BRL"})}</td>
-            <td>{release.payday.toLocaleDateString("pt-BR",{
+            <td className={styles.releaseList___Table___Data___name}>{release.name}</td>
+            <td className={styles.releaseList___Table___Data___types}>{release.type}</td>
+            <td className={styles.releaseList___Table___Data___value}>{release.value.toLocaleString("pt-br", {style: "currency", currency: "BRL"})}</td>
+            <td className={styles.releaseList___Table___Data___payday}>{release.payday.toLocaleDateString("pt-BR",{
                 day: "2-digit",
                 month: "2-digit",
                 year: "2-digit"

@@ -29,3 +29,17 @@
         }
     }   
 }
+
+@media(max-width: 765px){
+    .releaseList___Table___Data{
+        td{
+            &.releaseList___Table___Data__CtaItens{
+                gap: 28px;
+
+                svg{
+                    font-size: $font-size-h5;
+                }
+            }
+        }
+    }
+}
