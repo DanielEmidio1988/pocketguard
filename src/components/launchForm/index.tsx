@@ -145,7 +145,7 @@ function LaunchForm({releases, setReleases}: Props){
                 </div>
             </div>
             <div className={styles.formRelease__submitArea}>
-                <input type="submit" value="Lançar"/>
+                <input className={styles.formRelease__submitAre___submitBtn} type="submit" value="Lançar"/>
             </div>
         </form>
     )

@@ -83,17 +83,19 @@ function App() {
         <h1>PocketGuard</h1>
         <h2>Lançamento Financeiro</h2>
       </header>
-      <AmountResume
-        releases={releases}
-      />
-      <LaunchForm
-        releases={releases}
-        setReleases={setReleases}
-      />
-      <ReleasesList 
-        releases={releases}
-        setReleases={setReleases}
-      />
+      <main className={styles.reportPage}>
+        <AmountResume
+          releases={releases}
+        />
+        <LaunchForm
+          releases={releases}
+          setReleases={setReleases}
+        />
+        <ReleasesList 
+          releases={releases}
+          setReleases={setReleases}
+        />
+      </main>
     </>
   );
 }

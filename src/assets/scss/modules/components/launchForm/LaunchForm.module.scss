@@ -40,3 +40,27 @@
         padding: 24px 0;
     }
 }
+
+@media(max-width: 765px){
+
+    .formRelease{
+
+        .formRelease___inputArea{
+            padding: 24px;
+
+            .formRelease___inputArea___inputBox{
+                width: 100%;
+            }
+
+        }
+
+        .formRelease__submitArea{
+            .formRelease__submitAre___submitBtn{
+                width: 100%;
+                padding: 16px;
+                font-size: $font-size-h5;
+            }
+        }
+
+    }
+}

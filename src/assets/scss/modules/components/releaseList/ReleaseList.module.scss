@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    overflow: auto;
 
     .releaseList___Table{
         width: 100%;   
+        min-width: 900px;
         box-shadow: 0 5px 15px $gray-color-strong;     
         
         .releaseList___Table___header{
@@ -24,3 +26,8 @@
     }
 }
 
+@media(max-width: 900px){
+    .releaseList{
+        align-items: unset;
+    }
+}

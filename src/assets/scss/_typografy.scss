@@ -45,3 +45,22 @@ label{
     font-weight: 300;
     color: $dark-color;
 }
+
+@media(max-width: 765px){
+
+    h1{
+        font-size: $font-size-h1-responsive;
+    }
+    
+    h2{
+        font-size: $font-size-h2-responsive;
+    }
+    
+    h3{
+        font-size: $font-size-h3-responsive;
+    }
+    
+    h4{
+        font-size: $font-size-h4-responsive;
+    }
+}
