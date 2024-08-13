@@ -23,7 +23,6 @@ PocketGuard é uma aplicação web fullstack intuitiva e completa, projetada par
 - Tratamento de dados inválidos;
 - Incluir propriedade de categoria nos lançamentos;
 - Desenvolver página de relatórios;
-- Responsividade da página;
 - Página de login/senha para que cada usuário tenha seu próprio controle financeiro;
 - Refatoração do código para que os dados sejam recebidos via 'context' ao invés de 'props';
 - Aplicação da camada Back-End;
